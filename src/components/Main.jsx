@@ -106,7 +106,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div class="bg-white p-4 rounded shadow rounded-2xl">
+          {/* <div class="bg-white p-4 rounded shadow rounded-2xl">
             <Link to="/contact" className="block">
               <div className="card bg-base-100 w-96 shadow-sm">
                 <div className="card-body">
@@ -115,6 +115,15 @@ export default function Main() {
                   <div className="card-actions justify-end">
                     <button className="btn btn-primary">Buy right</button>
                   </div>
+                </div>
+              </div>
+            </Link>
+          </div> */}
+          <div className="p-4 rounded-2xl shadow bg-gray-900">
+            <Link to="/contact" className="block">
+              <div className="card bg-gray-800 text-white w-96 shadow-sm rounded-xl">
+                <div className="card-body">
+                  <h2 className="card-title text-white">Lets work together!</h2>
                 </div>
               </div>
             </Link>
