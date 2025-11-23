@@ -10,7 +10,7 @@ export default function Contact() {
         </div>
 
         {/* Second column = 3/4 */}
-        <div className="bg-white p-6 rounded shadow">
+        <div className="bg-white p-6 rounded shadow card bg-base-100 w-full shadow-sm rounded-2xl">
           {/* Headline */}
           <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
 
@@ -52,8 +52,11 @@ export default function Contact() {
               />
             </div>
 
-            <div className="text-right">
-              <button type="submit" className="btn btn-primary">
+            <div className="text-center rounded-2xl">
+              <button
+                type="submit"
+                className="btn btn-primary w-full rounded-xl"
+              >
                 Send
               </button>
             </div>

@@ -6,9 +6,9 @@ export default function About() {
       <div class="w-full min-h-screen p-4 space-y-6 bg-gray-100">
         {/* <!-- ---------------- TOP SECTION ---------------- --> */}
 
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 gap-4 ">
           {/* <!-- LEFT COLUMN (equal size) --> */}
-          <div class="bg-white p-4 rounded shadow">
+          <div class="bg-white p-4 rounded shadow rounded-2xl">
             <div className="card card-side bg-base-100 shadow-sm">
               <figure>
                 <img
@@ -33,14 +33,16 @@ export default function About() {
 
             {/* RIGHT - BOTTOM ROW divided into 2 columns */}
 
-            <div class="bg-white p-4 rounded shadow">Right Bottom Right</div>
+            <div class="bg-white p-4 rounded shadow rounded-2xl">
+              Right Bottom Right
+            </div>
           </div>
         </div>
 
         {/* MIDDLE SECTION  */}
         {/* <!-- 2 equal columns --> */}
         <div class="grid grid-cols-2 gap-4">
-          <div class="bg-white p-4 rounded shadow">
+          <div class="bg-white p-4 rounded shadow rounded-2xl">
             <div className="card bg-base-100 w-96 shadow-sm">
               <div className="card-body">
                 <h2 className="card-title">Card title!</h2>
@@ -54,7 +56,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div class="bg-white p-4 rounded shadow">
+          <div class="bg-white p-4 rounded shadow rounded-2xl">
             <div className="card bg-base-100 w-96 shadow-sm">
               <div className="card-body">
                 <h2 className="card-title">Card title!</h2>
@@ -76,10 +78,12 @@ export default function About() {
         {/* <!-- 3 columns → middle column = half width, others equal --> */}
         <div class="grid grid-cols-12 gap-4">
           {/* <!-- Left column (3/12) --> */}
-          <div class="col-span-3 bg-white p-4 rounded shadow">Middle Left</div>
+          <div class="col-span-3 bg-white p-4 rounded shadow rounded-2xl">
+            Middle Left
+          </div>
 
           {/* <!-- Middle column (6/12 = half) --> */}
-          <div class="col-span-6 bg-white p-4 rounded shadow">
+          <div class="col-span-6 bg-white p-4 rounded shadow rounded-2xl">
             <div className="card bg-base-100 w-96 shadow-sm">
               <div className="card-body">
                 <h2 className="card-title">Card title!</h2>
@@ -95,7 +99,9 @@ export default function About() {
           </div>
 
           {/* <!-- Right column (3/12) --> */}
-          <div class="col-span-3 bg-white p-4 rounded shadow">Middle Right</div>
+          <div class="col-span-3 bg-white p-4 rounded shadow rounded-2xl">
+            Middle Right
+          </div>
         </div>
       </div>
     </div>
