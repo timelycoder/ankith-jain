@@ -3,19 +3,19 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <div class="w-full min-h-screen p-4 space-y-6 bg-[#0f0f0f] text-[#ffffff]">
+      <div class="w-full min-h-screen p-4 space-y-6  text-[#ffffff]">
         {/* <!-- ---------------- TOP SECTION ---------------- --> */}
 
         <div class="grid grid-cols-2 gap-4 ">
           {/* <!-- LEFT COLUMN (equal size) --> */}
-          <div class="bg-[#1d1d1d] text-[#ffffff]p-4  shadow rounded-2xl">
-            <div className="card card-side shadow-sm">
-              <figure>
+          <div class="text-[#ffffff]p-4  shadow rounded-2xl">
+            <div className="card card-side shadow-sm bg-[#1d1d1d]">
+              <div>
                 <img
                   src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
                   alt="Movie"
                 />
-              </figure>
+              </div>
               <div className="card-body">
                 <h2 className="card-title">New movie is released!</h2>
                 <p>Click the button to watch on Jetflix app.</p>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import heroSrc from "/public/dp.png";
 import showCase from "/public/SHOWCASE.png";
+import icon55 from "/public/icon55.svg";
 
 export default function Main() {
   return (
@@ -13,18 +14,25 @@ export default function Main() {
           {/* <!-- LEFT COLUMN (equal size) --> */}
           <Link to="/about" className="block">
             <div class="bg-[#1d1d1d] text-[#ffffff]p-4 shadow rounded-2xl ">
-              <div className="  shadow-sm flex justify-between items-center">
+              <div className="grid grid-cols-2 items-center gap-6 p-8 shadow-sm bg-[#1d1d1d]  rounded-xl">
+                {/* Left Column: Image */}
                 <div className="w-full h-44 object-cover rounded-xl">
-                  <img src={heroSrc} alt="Movie" />
+                  <img
+                    src={heroSrc}
+                    alt="Movie"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
                 </div>
-                <div>
-                  <h2>A WEB DEVELOPER</h2>
-                  <h2>David Henderson</h2>
-                  <p>I am a Web Designer based in san francisco</p>
 
-                  <div className="card-actions justify-end">
-                    {/* <button className="btn btn-primary">Watch ok </button> */}
-                    <img className="w-1/2" src={showCase} alt="Movie" />
+                {/* Right Column: Text + icon */}
+                <div className="flex flex-col justify-center gap-4 py-15">
+                  <h2 className="text-2xl font-bold ">A WEB DEVELOPER</h2>
+                  <h2 className="text-xl font-semibold">David Henderson</h2>
+                  <p>I am a Web Designer based in San Francisco</p>
+
+                  <div className="card-actions justify-end mt-2">
+                    {/* icon or button */}
+                    <img src={icon55} alt="" className="w-10 h-10" />
                   </div>
                 </div>
               </div>
@@ -34,7 +42,7 @@ export default function Main() {
           {/* <!-- RIGHT COLUMN (equal size but inside 2 rows) --> */}
           <div class="grid grid-rows-[1fr_3fr] gap-4 h-full">
             {/* <!-- RIGHT - TOP ROW --> */}
-            <div class="bg-[#1d1d1d] text-[#ffffff]p-4  shadow rounded-4xl">
+            <div class="bg-[#1d1d1d] text-[#ffffff]p-4  shadow rounded-4xl  flex items-center justify-center h-full">
               Right Top
             </div>
 
@@ -59,13 +67,13 @@ export default function Main() {
                     src={showCase}
                     alt="Movie"
                   />
-                  <h3>show project</h3>
+                  <h3 className="uppercase">show project</h3>
                   <div className="flex justify-start gap-36">
                     <div>
                       <h6>projects</h6>
                     </div>
                     <div>
-                      <h4>btn</h4>
+                      <img src={icon55} alt="" />
                     </div>
                   </div>
                 </div>

@@ -1,157 +1,211 @@
-// // import React from "react";
-
-// // export default function Work() {
-// //   return (
-// //     <div>
-// //       <div className="space-y-6">
-// //         {/* ---------------- SECTION 1 ---------------- */}
-// //         <div className="grid grid-cols-[1fr_2fr] gap-4">
-// //           {/* Left column 1/3 */}
-// //           <div className="bg-blue-200 p-4 rounded shadow">
-// //             Left Column (Section 1)
-// //           </div>
-
-// //           {/* Right column 2/3 */}
-// //           <div className="grid grid-rows-[1fr_3fr] gap-4">
-// //             {/* Top row = 1/4 */}
-// //             <div className="bg-green-200 p-4 rounded shadow">Right Top Row</div>
-
-// //             {/* Bottom row = 3/4 */}
-// //             <div className="bg-green-300 p-4 rounded shadow">
-// //               Right Bottom Row
-// //             </div>
-// //           </div>
-// //         </div>
-
-// //         {/* ---------------- SECTION 2 ---------------- */}
-// //         <div className="grid grid-cols-[0.25fr_1fr_1fr] gap-4">
-// //           {/* First column = 1/4 of Section 1 left column */}
-// //           <div className="bg-red-200 p-4 rounded shadow">
-// //             Section 2 - Column 1
-// //           </div>
-
-// //           {/* Second column */}
-// //           <div className="bg-red-300 p-4 rounded shadow">
-// //             Section 2 - Column 2
-// //           </div>
-
-// //           {/* Third column */}
-// //           <div className="bg-red-400 p-4 rounded shadow">
-// //             Section 2 - Column 3
-// //           </div>
-// //         </div>
-// //       </div>
-// //     </div>
-// //   );
-// // }
-
 // import React from "react";
+// import showCase from "/public/SHOWCASE.png";
+// import icon55 from "/public/icon55.svg";
 
-// export default function Work() {
+// const Work = () => {
 //   return (
 //     <div>
-//       <div className="space-y-6">
-//         {/* ---------------- SECTION 1 ---------------- */}
-//         <div className="grid grid-cols-[1fr_2fr] gap-4">
-//           {/* Left column 1/3 */}
-//           <div className="bg-blue-200 p-4 rounded shadow">
-//             Left Column (Section 1)
+//       <h1 className="flex items-center justify-center pb-10  mb-25 uppercase text-3xl"></h1>
+//       <div className="grid grid-cols-3 gap-6 p-6">
+//         {/* Box 1 */}
+//         <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col justify-end h-85 -mt-20 ">
+//           <div className="-py-30">
+//             <img
+//               src={showCase}
+//               alt=""
+//               className="w-full h-64 md:h-80 lg:h-66 object-cover rounded-t-2xl"
+//             />
 //           </div>
-
-//           {/* Right column 2/3 */}
-//           <div className="grid grid-rows-[1fr_3fr] gap-4">
-//             {/* Top row = 1/4 */}
-//             <div className="bg-green-200 p-4 rounded shadow">Right Top Row</div>
-
-//             {/* Bottom row = 3/4 */}
-//             <div className="bg-green-300 p-4 rounded shadow">
-//               Right Bottom Row
+//           <div className="flex justify-around mb-10">
+//             <div>
+//               <p className="text-[#5f5f5f] text-2xl">web design</p>
+//               <p className="text-2xl">dynamic</p>
+//             </div>
+//             <div className="mt-5">
+//               <img src={icon55} alt="" className="w-10 h-10" />
 //             </div>
 //           </div>
 //         </div>
 
-//         {/* ---------------- SECTION 2 ---------------- */}
-//         <div className="grid grid-cols-3 gap-4">
-//           {/* All columns equal */}
-//           <div className="bg-red-200 p-4 rounded shadow">
-//             Section 2 - Column 1
+//         {/* Group: h1 + Box 2 + Box 3 */}
+//         <div className="col-span-2 flex flex-col gap-4">
+//           {/* Heading above both boxes */}
+//           <h1 className="text-2xl font-bold text-center pb-10">All projects</h1>
+
+//           {/* Inner grid for Box 2 + Box 3 */}
+//           <div className="grid grid-cols-2 gap-6">
+//             {/* Box 2 */}
+//             <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col items-center justify-center h-66">
+//               <img src={showCase} alt="" />
+//             </div>
+
+//             {/* Box 3 */}
+//             <div className="bg-[#1d1d1d] text-white rounded-2xl flex items-center justify-center h-66 ">
+//               <img src={showCase} alt="" />
+//             </div>
 //           </div>
-//           <div className="bg-red-300 p-4 rounded shadow">
-//             Section 2 - Column 2
-//           </div>
-//           <div className="bg-red-400 p-4 rounded shadow">
-//             Section 2 - Column 3
-//           </div>
+//         </div>
+
+//         {/* Box 4 */}
+//         <div className="bg-[#1d1d1d] text-white rounded-2xl flex items-center justify-center h-86 -mt-20">
+//           <img src={showCase} alt="" />
+//         </div>
+
+//         {/* Box 5 */}
+//         <div className="bg-[#1d1d1d] text-white rounded-2xl flex items-center justify-center h-66">
+//           <img src={showCase} alt="" />
+//         </div>
+
+//         {/* Box 6 */}
+//         <div className="bg-[#1d1d1d] text-white rounded-2xl flex items-center justify-center h-66">
+//           <img src={showCase} alt="" />
 //         </div>
 //       </div>
 //     </div>
 //   );
-// }
+// };
 
+// export default Work;
 import React from "react";
+import showCase from "/public/SHOWCASE.png";
+import icon55 from "/public/icon55.svg";
 
-export default function Work() {
-  const cards = [
-    {
-      title: "Dynamic",
-      subtitle: "WEB DESIGNING",
-      img: "/mnt/data/pic.jpg#1",
-    },
-    {
-      title: "Seven Studio",
-      subtitle: "MOBILE DESIGNING",
-      img: "/mnt/data/pic.jpg#2",
-    },
-    {
-      title: "Raven Studio",
-      subtitle: "BRANDING",
-      img: "/mnt/data/pic.jpg#3",
-    },
-    {
-      title: "Diesel H1",
-      subtitle: "PHOTOGRAPHY",
-      img: "/mnt/data/pic.jpg#4",
-    },
-    {
-      title: "Submarine",
-      subtitle: "MOBILE DESIGNING",
-      img: "/mnt/data/pic.jpg#5",
-    },
-    {
-      title: "Hydra Merc",
-      subtitle: "WEB DESIGNING",
-      img: "/mnt/data/pic.jpg#6",
-    },
-  ];
-
+const Work = () => {
   return (
-    <div className="w-full min-h-screen bg-black text-white px-6 py-12">
-      <h1 className="text-center text-4xl font-bold tracking-widest mb-10">
-        ✹ ALL PROJECTS ✹
-      </h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {cards.map((card, i) => (
-          <div
-            key={i}
-            className="bg-[#111] rounded-3xl overflow-hidden p-4 flex flex-col gap-4 hover:bg-[#181818] transition"
-          >
-            <div className="w-full h-56 overflow-hidden rounded-2xl">
-              <img
-                src={card.img}
-                alt={card.title}
-                className="w-full h-full object-cover"
-              />
+    <div>
+      <h1 className="flex items-center justify-center pb-10 mb-25 uppercase text-3xl"></h1>
+      <div className="grid grid-cols-3 gap-6 p-6">
+        {/* Box 1 */}
+        <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col justify-end h-85 -mt-20">
+          <div>
+            <img
+              src={showCase}
+              alt=""
+              className="w-full h-64 md:h-80 lg:h-66 object-cover rounded-t-2xl"
+            />
+          </div>
+          <div className="flex justify-around mb-10 pt-4">
+            <div>
+              <p className="text-[#5f5f5f] text-2xl">web design</p>
+              <p className="text-2xl">dynamic</p>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xs tracking-widest opacity-60">
-                {card.subtitle}
-              </span>
-              <span className="text-xl font-semibold mt-1">{card.title}</span>
+            <div className="mt-5">
+              <img src={icon55} alt="" className="w-10 h-10" />
             </div>
           </div>
-        ))}
+        </div>
+
+        {/* Group: h1 + Box 2 + Box 3 */}
+        <div className="col-span-2 flex flex-col gap-4">
+          {/* Heading above both boxes */}
+          <h1 className="text-2xl font-bold text-center pb-10">All projects</h1>
+
+          {/* Inner grid for Box 2 + Box 3 */}
+          <div className="grid grid-cols-2 gap-6">
+            {/* Box 2 */}
+            <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col justify-end h-66">
+              <div>
+                <img
+                  src={showCase}
+                  alt=""
+                  className="w-full h-48 object-cover rounded-t-2xl"
+                />
+              </div>
+              <div className="flex justify-around mb-4 pt-4">
+                <div>
+                  <p className="text-[#5f5f5f] text-2xl">web design</p>
+                  <p className="text-2xl">dynamic</p>
+                </div>
+                <div className="mt-2">
+                  <img src={icon55} alt="" className="w-10 h-10" />
+                </div>
+              </div>
+            </div>
+
+            {/* Box 3 */}
+            <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col justify-end h-66">
+              <div>
+                <img
+                  src={showCase}
+                  alt=""
+                  className="w-full h-48 object-cover rounded-t-2xl"
+                />
+              </div>
+              <div className="flex justify-around mb-4 pt-4">
+                <div>
+                  <p className="text-[#5f5f5f] text-2xl">branding</p>
+                  <p className="text-2xl">raven</p>
+                </div>
+                <div className="mt-2">
+                  <img src={icon55} alt="" className="w-10 h-10" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Box 4 */}
+        <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col justify-end h-86 -mt-20">
+          <div>
+            <img
+              src={showCase}
+              alt=""
+              className="w-full h-64 object-cover rounded-t-2xl"
+            />
+          </div>
+          <div className="flex justify-around mb-4 pt-4">
+            <div>
+              <p className="text-[#5f5f5f] text-2xl">photography</p>
+              <p className="text-2xl">diesel h1</p>
+            </div>
+            <div className="mt-2">
+              <img src={icon55} alt="" className="w-10 h-10" />
+            </div>
+          </div>
+        </div>
+
+        {/* Box 5 */}
+        <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col justify-end h-66">
+          <div>
+            <img
+              src={showCase}
+              alt=""
+              className="w-full h-48 object-cover rounded-t-2xl"
+            />
+          </div>
+          <div className="flex justify-around mb-4 pt-4">
+            <div>
+              <p className="text-[#5f5f5f] text-2xl">mobile design</p>
+              <p className="text-2xl">submarine</p>
+            </div>
+            <div className="mt-2">
+              <img src={icon55} alt="" className="w-10 h-10" />
+            </div>
+          </div>
+        </div>
+
+        {/* Box 6 */}
+        <div className="bg-[#1d1d1d] text-white rounded-2xl flex flex-col justify-end h-66">
+          <div>
+            <img
+              src={showCase}
+              alt=""
+              className="w-full h-48 object-cover rounded-t-2xl"
+            />
+          </div>
+          <div className="flex justify-around mb-4 pt-4">
+            <div>
+              <p className="text-[#5f5f5f] text-2xl">web design</p>
+              <p className="text-2xl">hydra merc</p>
+            </div>
+            <div className="mt-2">
+              <img src={icon55} alt="" className="w-10 h-10" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default Work;
