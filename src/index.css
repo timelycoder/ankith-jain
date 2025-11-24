@@ -1,2 +1,14 @@
-@plugin "daisyui";
 @import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+  body {
+    @apply bg-[#0f0f0f] text-[#ffffff];
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-[#0f0f0f] text-[#ffffff];
+  }
+}

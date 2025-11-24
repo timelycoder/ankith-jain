@@ -7,14 +7,14 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div className="px-26 py-5">
       <Navbar />
-      <div className="px-26 py-10">
+      <div>
         <Outlet />
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 
